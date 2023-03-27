@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <form action="" autocomplete="on">
+            <div class="reg">
+                <h1>Registration Form</h1>
+            </div>
+            <fieldset class="name">
+                <legend>Presonal Details</legend>
+
+                FirstName:
+                <input type="text" required placeholder="Your name.." name="firstName" autofocus /><br /><br />
+                LastName:
+                <input
+                type="text"
+                required
+                placeholder="Your last name.." name="lastName"/><br /><br />
+
+                E-mail-add: <input type="email" required placeholder="example@gmail.com"><br><br>
+
+                Password: <input type="password" required maxlength="8" /><br /><br />
+
+                DOB: <input type="date" /> <br /><br />
+
+                Gender: <input type="radio" name="Gender" value="M" />Male
+                <input type="radio" name="Gender" value="F" />Female <br /><br />
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Qualification</legend>
+
+                Qualification:
+                <input
+                type="checkbox"
+                name="qualification"
+                value="10th"
+                checked
+                />10th <input type="checkbox" name="qualification" value="12th" checked />12th
+                <input type="checkbox" name="qualification" value="diploma" checked />Diploma
+                <input
+                type="checkbox"
+                name="qualification"
+                value="graduaton"/>Graduation <br /><br />
+
+                Stream: <input list="streams">
+                <datalist id="streams">
+                    <option value="B.Tech-Civil">
+                    <option value="B.Tech-CSE">
+                    <option value="B.Tech-IT">
+                    <option value="B.Tech-Mechanical">
+                    <option value="B.Tech-Robotics">
+                </datalist><br><br>
+
+                10th Board:
+                <select name="secondary" id="">
+                <option value="Pb-board">Punjab Board</option>
+                <option value="Jk-board">Jammu-kasmir Board</option>
+                <option value="Delhi-board">Delhi Board</option></select><br /><br />
+
+                12th Board:
+                <select name="Board" id="">
+                <option value="Pb-board">Punjab Board</option>
+                <option value="Bihar-board">Bihar Board</option>
+                <option value="Delhi-board">Delhi Board</option></select
+                ><br /><br />
+
+                Graduation Board:
+                <select name="graduaton" id="">
+                <option value="Pb-board">Punjab Board</option>
+                <option selected value="Jk-board">Jammu-kasmir Board</option>
+                <option value="Delhi-board">Delhi Board</option>
+                </select>
+            </fieldset><br />
+
+            <fieldset>
+                <legend>Adderess</legend>
+                State: <input type="text" id="add1" /><br /><br />
+                Disti: <input type="text" id="add2" /><br /><br />
+                City: <input type="text" id="add3" /><br /><br />
+                Zip-code: <input type="number"  id="add4"/><br /><br />
+                Postal-code: <input type="number"  id="add5"/><br /><br />
+            </fieldset><br />
+
+            <fieldset>
+                <legend>Description</legend>
+                <textarea name="description" id="des" cols="30" rows="10" placeholder="write simething..."></textarea>
+            </fieldset><br /><br />
+
+            <div class="button">
+                <input type="submit" class="button1" value="SIGN UP" />
+                <input type="reset" class="button1" />
+            
+                <button value="Cancel" class="button1">Cancel</butto>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
